@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./script/validateUser.js"></script>
+
+  <title>Shopping Cart</title>
+</head>
+
+<body onload="initSession()">
+  <header>
+
+    <p id="user-greeting"></p>
+    <button id="btn-logout" onclick="logout()">Logout</button>
+
+  </header>
+
+  <div class="container">
+
+    <h1 class="heading-title">Shopping Cart</h1>
+
+    <hr>
+
+    <button id="btnEmpty" onclick="emptyCart()">Empty cart</button>
+
+    <table class="tbl-cart" cellpadding="10" cellspacing="1">
+      <thead>
+        <tr>
+          <th class="align-left">Name</th>
+          <th class="align-right" width="10%">Unit Price</th>
+          <th class="align-right" width="5%">Quantity</th>
+          <th class="align-right" width="10%">Sub Total</th>
+        </tr>
+      </thead>
+
+      <tbody id="cartTableBody"></tbody>
+
+      <tfoot>
+        <tr>
+          <td id="itemTotal" class="align-right">Total:</td>
+          <td colspan="2" id="itemCount" class="align-right"></td>
+          <td id="totalAmount" class="align-right"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1 class="heading-title">Products</h1>
+
+    <div id="product-items">
+      <!-- uploaded from script -->
+
+
+    </div>
+  </div>
+
+  <script src="./script/permissions.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style/loginStyle.css">
+  <script src="./script/loginScript.js" defer></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1 class="title-container">Login</h1>
+
+    <form action="" id="login-form">
+
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" minlength="6" required>
+      </div>
+
+      <div class="input-container">
+
+        <div class="flex-container">
+          <label for="password">Password</label>
+          <a href="#" id="pass-reset">Forgot Password?</a>
+        </div>
+
+        <input type="password" name="password" id="password" required placeholder="******">
+      </div>
+
+      <button id="btn-login">Login</button>
+
+      <p id="account-create">Don't have account? <a href="#">Create new account</a></p>
+    </form>
+  </div>
+</body>
+
+</html>
